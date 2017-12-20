@@ -5,7 +5,7 @@ bool isUnique(const std::string& str) {
     int index;
     for(int i = 0; i < str.size(); ++i) {
          index = (int)str[i];
-         if(arr[index] == true) {
+         if(arr[index]) {
              return false;
          }
          arr[index] = true;
